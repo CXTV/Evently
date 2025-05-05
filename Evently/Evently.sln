@@ -9,13 +9,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DDF62CF1-DB92-4FEA-A6B9-8CEF6A676427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{078C19C2-FCA0-4B5D-A4E0-3D40F2FDFC88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{6C4B9B57-0E3A-47E5-845E-00D8E6ECE439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{FC2C4DAA-482E-41C3-92C8-7B2A5FC7AB92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Api", "Evently.Api\Evently.Api.csproj", "{588E0D35-DBE9-406D-83B2-E9C8BB914CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Api", "Evently.Modules.Events\Evently.Modules.Api.csproj", "{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{588E0D35-DBE9-406D-83B2-E9C8BB914CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588E0D35-DBE9-406D-83B2-E9C8BB914CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588E0D35-DBE9-406D-83B2-E9C8BB914CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588E0D35-DBE9-406D-83B2-E9C8BB914CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{078C19C2-FCA0-4B5D-A4E0-3D40F2FDFC88} = {DDF62CF1-DB92-4FEA-A6B9-8CEF6A676427}
+		{6C4B9B57-0E3A-47E5-845E-00D8E6ECE439} = {DDF62CF1-DB92-4FEA-A6B9-8CEF6A676427}
+		{FC2C4DAA-482E-41C3-92C8-7B2A5FC7AB92} = {6C4B9B57-0E3A-47E5-845E-00D8E6ECE439}
+		{588E0D35-DBE9-406D-83B2-E9C8BB914CCD} = {078C19C2-FCA0-4B5D-A4E0-3D40F2FDFC88}
+		{FFAC5AAA-5B7B-4F7F-AEBD-DD0132A68032} = {FC2C4DAA-482E-41C3-92C8-7B2A5FC7AB92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D09428D-73D1-4AA8-95B2-7B154D081402}
