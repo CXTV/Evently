@@ -13,10 +13,10 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Directory.Build.props", "."]
-COPY ["Evently.Api/Evently.Api.csproj", "Evently.Api/"]
-RUN dotnet restore "./Evently.Api/Evently.Api.csproj"
+COPY ["src/API/Evently.Api/Evently.Api.csproj", "src/API/Evently.Api/"]
+RUN dotnet restore "./src/API/Evently.Api/Evently.Api.csproj"
 COPY . .
-WORKDIR "/src/Evently.Api"
+WORKDIR "/src/src/API/Evently.Api"
 RUN dotnet build "./Evently.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
